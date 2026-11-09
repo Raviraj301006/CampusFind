@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F4F7FC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="CampusFind"
+            android:textColor="#1976D2"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Create your account"
+            android:textColor="#555555"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etSignupName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:hint="Full name"
+            android:inputType="textPersonName"
+            android:autofillHints="name"
+            android:minHeight="52dp"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/etSignupCollege"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="College name"
+            android:inputType="textCapWords"
+            android:minHeight="52dp"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/etSignupEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Email address"
+            android:inputType="textEmailAddress"
+            android:autofillHints="emailAddress"
+            android:minHeight="52dp"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/etSignupPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Create password (minimum 6 characters)"
+            android:inputType="textPassword"
+            android:autofillHints="newPassword"
+            android:minHeight="52dp"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Create Account"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnOpenLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Already have an account? Login"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+</ScrollView>

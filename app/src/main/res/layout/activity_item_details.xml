@@ -1,0 +1,221 @@
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F7FC"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/backButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="←  Item Details"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#172554"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- Item Image Placeholder -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginTop="20dp"
+            android:background="#DCE7FA"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🎒"
+                android:textSize="70sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item Photo"
+                android:textSize="14sp"
+                android:textColor="#2456A6" />
+
+        </LinearLayout>
+
+        <!-- Status -->
+        <TextView
+            android:id="@+id/detailStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#D1FAE5"
+            android:padding="8dp"
+            android:text="FOUND ITEM"
+            android:textColor="#047857"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+
+        <!-- Item Name -->
+        <TextView
+            android:id="@+id/detailItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Item Name"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#172554" />
+
+        <!-- Item Description -->
+        <TextView
+            android:id="@+id/detailDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Item description"
+            android:textSize="15sp"
+            android:textColor="#64748B" />
+
+        <!-- Item Information Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Item Information"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textColor="#172554" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="📍  Location"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#2456A6" />
+
+            <TextView
+                android:id="@+id/detailLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Location"
+                android:textSize="14sp"
+                android:textColor="#64748B" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="📅  Reported Date"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#2456A6" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Date not recorded"
+                android:textSize="14sp"
+                android:textColor="#64748B" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="📝  Description"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#2456A6" />
+
+            <TextView
+                android:id="@+id/detailDescriptionDuplicate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Item description"
+                android:textSize="14sp"
+                android:textColor="#64748B" />
+
+        </LinearLayout>
+
+        <!-- Contact Information -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Contact Information"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#172554" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:id="@+id/reportedByText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reported by: CampusFind Student"
+                android:textSize="14sp"
+                android:textColor="#64748B" />
+
+            <TextView
+                android:id="@+id/contactDetailsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Contact details: Not provided"
+                android:textSize="14sp"
+                android:textColor="#64748B" />
+
+        </LinearLayout>
+
+        <!-- Contact Button -->
+        <Button
+            android:id="@+id/contactButton"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#2456A6"
+            android:text="Contact Finder"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+        <!-- Resolve Button -->
+        <Button
+            android:id="@+id/resolveButton"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#16A34A"
+            android:text="Mark as Resolved"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</ScrollView>
